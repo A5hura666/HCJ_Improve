@@ -1,24 +1,42 @@
+:root{
+    --taille_nav: 40px;
+}
+
 body{
     margin: 0;
     padding: 0;
 }
 
-nav{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: black;
-    height: 50px;
+.nav ul li{
+    list-style: none;
 }
 
-.navbar{
+.nav{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: var(--taille_nav);
+    width: 100%;
+}
+
+.nav .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
 }
 
-a{
+.nav a{
+    display: flex;
+    height: var(--taille_nav);
+    align-items: center;
+    text-align: center;
     text-decoration: none;
     color: white;
+}
+
+.sous-menu{
+    display: flex;
+    flex-direction: column;
+    color: blueviolet;
 }
