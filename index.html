@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>
         Fast_learning
@@ -8,27 +7,31 @@
     <meta charset="UTF-8">
     <meta name="author" content="Ethan Bourguigneau">
     <link type="text/css" rel="stylesheet" href="main.css">
+    <link type="text/css" rel="stylesheet" href="responsive.css">
 </head>
-
 <body>
     <header>
-        <nav class="nav">
+        <nav>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projet</a></li>
+                <li><a href="index.html">Home</a></li>
+
+                <li class="deroulant"><a href="#">Projet</a>
                     <ul class="sous-menu">
                         <li><a href="#">Item1</a></li>
                         <li><a href="#">Item2</a></li>
                         <li><a href="#">Item3</a></li>
                     </ul>
+                </li>
+
                 <li><a href="#">Partie</a></li>
                 <li><a href="Contact.html">contact</a></li>
             </ul>
         </nav>
     </header>
-    <video controls autoplay>
-    <source src="img_anime/lake_-_91562 (Original).mp4" type="video/mp4">
-    </video>
-</body>
 
+    <video autoplay loop muted preload="auto" poster="/img/lake.png" class="lake">
+        <source src="img_anime/Lake - 91562.mp4" type="video/mp4">
+    </video>
+
+</body>
 </html>
